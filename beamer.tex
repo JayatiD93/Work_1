@@ -116,6 +116,7 @@ This article shows:\\
 The basic trajectory equation for cricket balls:\\
 \begin{align}
 \frac{du}{dt}=-[(\vec{u}-\vec{U})^2+(\vec{v}-\vec{V})^2+(\vec{w}-\vec{W})^2]^{0.5}(\vec{u}-\vec{U})C_D T
+%\label{equation: eq1}
 \end{align}
 \begin{align}
 \frac{dv}{dt}=-[(\vec{u}-\vec{U})^2+(\vec{v}-\vec{V})^2+(\vec{w}-\vec{W})^2]^{0.5}[-(\vec{v}-\vec{V})C_D T+(\vec{u}-\vec{U})C_S T]
@@ -231,6 +232,35 @@ $w$ & vertical ball velocity\\
     The \textbf{Reynolds} \textbf{number} is a parameter with determines the transition between from the laminar flow to turbulent flow. Thus, the Reynolds number plays a huge role in determining the drag and side force coefficients acting on the ball as the ball travels through air.
   \end{itemize}
 \end{frame} 
+
+\section{Significance of Reynolds number}
+\begin{frame}{Turbulent and Laminar Flow}
+    \begin{itemize}
+    \item 
+    
+    \item
+    
+    \item
+    
+  \end{itemize}
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{./figs/laminar.png}
+    \caption{Laminar Flow}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{./figs/turbulant.png}
+    \caption{Turbulent Flow}
+  \end{subfigure}
+  \caption{Different types of Flows}
+  \label{fig:drag1}
+\end{figure}
+  
+  
+\end{frame} 
+
+
 \section{Various cricket parameters which affect the Reynolds number of the ball.}
 \begin{frame}{Various cricket parameters which affect the Reynolds number of the ball.}
     \begin{itemize}
@@ -350,6 +380,27 @@ $H-n$ & Experiments done by Hunt, n is the seam angle\\
   \label{fig:side3}
 \end{figure}
 \end{frame}
+
+\section{Results of Past Experiments}
+\begin{frame}
+\frametitle{Observations}
+From the plots \ref{side3}, it can be observed that:\\
+\begin{itemize}
+    \item 
+    In sub-critical region the drag force coeffiecient is 0.5 for new ball as well as old ball.
+     \item
+    In super-critical region the drag force coeffiecient is 0.3 for new ball as well as old ball.
+    \item 
+    In sub-critical region the side force coeffiecient is 0.3 for new ball as well as old ball.
+    \item
+    In super-critical region the side force coeffiecient is 0 for new ball where as for old ball it is -2.5.
+    \item
+    These plots with different values of $C_D$ and $C_S$ are experimentally done, there  no particular expression of $C_D$ and $C_S$ are derived from the experimental data yet.
+    
+  \end{itemize}
+
+\end{frame}
+
 
 \section{Results of Past Experiments}
 \begin{frame}
@@ -569,8 +620,21 @@ Aerodyn., 2007, 95(5), 329–353.
 \end{columns}
 
 \end{frame}
+\section{Back up}
+\begin{frame}
+\frametitle{Back up}
+\begin{align}
+\bar{x}= \frac{1}{C_D T}log(1+C_D T \bar{t})\\
+\bar{y}= (\bar{t}-(\frac{1}{C_D T}log(1+C_D T \bar{t})))\frac{C_S}{C_D}\\
+\bar{z}=\bar{t}\sin\alpha - \frac{\bar{t}^2}{2}
+\end{align}
+where
+\begin{align}
+\bar{t}= \frac{t g}{q}
+\end{align}
+$t$ is the time, $g$ is  acceleration due to gravity.
 
-
+\end{frame}
 \newpage
 \bibliography{ref}
 
